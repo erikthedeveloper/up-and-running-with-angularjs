@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Up and Running with AngularJS - Part One</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+</head>
+<!-- Add ng-app to activate AngularJS -->
+<body ng-app>
+
+    <div class="container">
+        <h1>Up and Running with AngularJS <small>Part One</small></h1>
+
+        <div ng-controller="OurController">
+            <p>
+                Here is foo: {{foo}}
+            </p>
+        </div>
+
+    </div>
+
+    <!-- AngularJS CDN     -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <!-- Some Basic AngularJS -->
+    <script type="text/javascript">
+        function OurController($scope) {
+            $scope.foo = "Bar";
+        }
+    </script>
+</body>
+</html>
