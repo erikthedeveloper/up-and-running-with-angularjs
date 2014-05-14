@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Up and Running with AngularJS - Part One</title>
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap 3 CSS CDN -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 </head>
+
 <!-- Add ng-app to activate AngularJS -->
 <body ng-app>
 
     <div class="container">
         <h1>Up and Running with AngularJS <small>Part One</small></h1>
 
+        <!-- Declare the controller for this div. Scope hoopla. More on that later... -->
         <div ng-controller="OurController">
             <p>
+                <!-- Lets play with some data binding! -->
                 Here is foo: {{foo}}
             </p>
         </div>
@@ -25,6 +28,7 @@
     <!-- Some Basic AngularJS -->
     <script type="text/javascript">
         function OurController($scope) {
+            // Bind foo to our scope for "OurController"
             $scope.foo = "Bar";
         }
     </script>
